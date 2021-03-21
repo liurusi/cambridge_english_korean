@@ -7,7 +7,7 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 headers = {"User-Agent": "Mozilla/5.0"}
 # main_url = "https://dictionary.cambridge.org/dictionary/english-korean/"
-main_url = "https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4-%ED%95%9C%EA%B5%AD%EC%96%B4/"
+main_url = "https://dictionary.cambridge.org/us/dictionary/english-chinese-simplified/"
 word = input("\r\n")
 url = requests.get(main_url + word, headers=headers).text
 soup = BeautifulSoup(url, "lxml")
